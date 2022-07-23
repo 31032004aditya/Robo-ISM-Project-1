@@ -1,0 +1,26 @@
+int ldrPin = A0;
+int led = 5;
+int threshhold = 40;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int intsty;
+  intsty = analogRead(ldrPin);
+  Serial.println(" ");
+  Serial.print("Light Sensor Value = ");
+  Serial.print(intsty);
+  delay(1000);
+
+  if(intsty<=threshhold){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
+}

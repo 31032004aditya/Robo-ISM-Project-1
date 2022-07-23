@@ -1,0 +1,5 @@
+Servo motor - https://wokwi.com/projects/337951358950834770
+
+LDR sensor - https://wokwi.com/projects/337949639089062484
+
+UV sensor - https://wokwi.com/projects/337947950272479828
